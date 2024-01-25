@@ -15,3 +15,10 @@ INSTALLED_APPS = [
     "polls",
     "atlas_provider_django",
 ]
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "atlas_provider_django.db",
+    }
+}
