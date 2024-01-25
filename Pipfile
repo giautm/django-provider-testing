@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# django 5.0.2 is the latest version or more
+django = ">=5.0.0"
+atlas-provider-django = ">=0.1.6"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
