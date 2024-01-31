@@ -5,7 +5,7 @@ variable "dialect" {
 locals {
   dev_url = {
     mysql = "docker://mysql/8/dev"
-    postgresql = "docker://postgres/15"
+    postgresql = "postgres://postgres:postgres@db:5432/postgres?sslmode=disable"
     mssql = "docker://sqlserver/2022-latest"
     sqlite = "sqlite://?mode=memory&_fk=1"
   }[var.dialect]
